@@ -5,7 +5,7 @@
 $servidor = 'localhost';
 $usuario = 'root';
 $senha = '';
-$database = 'shadow_dev';
+$database = 'escola_programacao';
 
 $conexao = mysqli_connect($servidor, $usuario, $senha, $database);
 
@@ -98,6 +98,27 @@ while($linha = mysqli_fetch_array($consulta)){
             <td>'.$linha['data_nascimento'].'</td>
          </tr>';
 };
+
+echo '</table>';
+
+$consulta = mysqli_query($conexao, "SELECT alunos.nome, cursos.nome_curso
+   from alunos, cursos, alunos_cursos
+   where alunos_cursos.id_aluno = alunos.id_aluno and alunos_cursos.id_curso = cursos.id_curso"
+   );
+
+echo '<table border=1>
+         <tr>
+            <th>Nome do aluno</th>
+            <th>Nome do curso</th>
+         </tr>   
+';
+
+while($linha = mysqli_fetch_array($consulta)){
+   echo '<tr>
+            <td>'.$linha['nome'].'</td>
+            <td>'.$linha['nome_curso'].'</td>
+         </tr>';
+}
 
 echo '</table>';
 
