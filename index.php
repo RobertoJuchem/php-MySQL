@@ -100,14 +100,4 @@ while($linha = mysqli_fetch_array($consulta)){
 
 echo '</table>';
 
-
-$consulta = mysqli_query($conexao, "SELECT * FROM ALUNOS");
-
-while($linha = mysqli_fetch_array($consulta)){
-   echo $linha['id_aluno'];
-   echo $linha['nome'];
-   echo $linha['data_nascimento'];
-   echo '<hr/>';
-}
-
 ?>
