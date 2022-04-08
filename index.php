@@ -88,6 +88,8 @@ echo '<table border=1>
          </tr>   
 ';
 
+$consulta = mysqli_query($conexao, "SELECT * FROM ALUNOS");
+
 while($linha = mysqli_fetch_array($consulta)){
    echo '<tr>
             <td>'.$linha['id_aluno'].'</td>
@@ -97,3 +99,5 @@ while($linha = mysqli_fetch_array($consulta)){
 };
 
 echo '</table>';
+
+?>
