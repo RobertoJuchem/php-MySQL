@@ -17,7 +17,7 @@ if($conexao){
 #Tabela cursos (nome do curso, carga horária)
 
 $query = 'CREATE TABLE CURSOS(
-   id_curso int not null auto_increment,
+   id int not null auto_increment,
    nome_curso varchar(255) not null,
    carga_horaria int not null,
    primary key(id_curso)
@@ -25,6 +25,7 @@ $query = 'CREATE TABLE CURSOS(
 
 $executar = mysqli_query($conexao, $query);
 
+mysqli_query($conexao, "ALTER TABLE CURSOS CHANGE id id_curso int not null auto_increment");
 
 #Tabela alunos (nome do aluno, data nascimento) ###################################################
 
