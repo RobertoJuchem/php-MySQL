@@ -13,7 +13,7 @@ $consulta_cursos = mysqli_query($conexao, $query);
 $query = 'SELECT * from alunos';
 $consulta_alunos = mysqli_query($conexao, $query);
 
-$query = 'SELECT alunos.nome, cursos.nome_curso
+$query = 'SELECT alunos.nome, cursos.nome_curso, alunos_cursos.id_alunos_cursos
           from alunos, cursos, alunos_cursos
           where alunos_cursos.id_aluno = alunos.id_aluno
           and alunos_cursos.id_curso = cursos.id_curso

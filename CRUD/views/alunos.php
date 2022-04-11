@@ -17,7 +17,7 @@
    ?>
 
       <td><a href="deleta_aluno.php?id_aluno=<?php echo $linha['id_aluno']; ?>">🗑️</a></td>
-      </tr></tr>
+      </tr>
 
    <?php
    }
