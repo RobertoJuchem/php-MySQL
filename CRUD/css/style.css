@@ -3,6 +3,10 @@
    padding: 0;
 }
 
+a{
+   text-decoration: none;
+}
+
 body{
    font-family: helvetica, arial;
    font-size: 16px;
@@ -15,9 +19,15 @@ header{
    padding: 30px 0;
 }
 
+form{
+   display: flex;
+   flex-direction: column;
+}
+
 input, select{
    font-size: 16px;
    padding: 5px;
+   width: 100%;
 }
 
 footer{
@@ -66,6 +76,7 @@ footer{
 }
 
 .linkInserirDados{
+   margin: 0 auto;
    background-color: greenyellow;
    border: 1px solid #262626;
    border-radius: 10px;
@@ -76,6 +87,8 @@ footer{
    padding: 10px;
    margin-bottom: 15px;
    text-decoration: none;
+   width: 30%;
+   text-align: center;
 }
 
 .linkInserirDados:hover{

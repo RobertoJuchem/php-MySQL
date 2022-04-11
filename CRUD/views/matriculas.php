@@ -1,24 +1,29 @@
-<a href="?pagina=inserir_matricula" class="linkInserirDados">Matricular aluno em um curso</a>
+<a href="?pagina=inserir_matricula" class="linkInserirDados">Matricular aluno</a>
 
-<table class="viewsTable">
-   <tr>
-      <th>Nome do Aluno</th>
-      <th>Curso Matriculado</th>
-   </tr>
+<table class="viewsTable" id="matriculas">
 
-   <?php
+   <thead>
+      <tr>
+         <th>Nome do Aluno</th>
+         <th>Curso Matriculado</th>
+         <th>Deletar</th>
+      </tr>
+   </thead>
 
-   while ($linha = mysqli_fetch_array($consulta_matriculas)) {
-      echo '<tr>
+   <tbody>
+      <?php
+
+      while ($linha = mysqli_fetch_array($consulta_matriculas)) {
+         echo '<tr>
                <td>' . $linha['nome'] . '</td>
                <td>' . $linha['nome_curso'] . '</td>'
-   ?>
+      ?>
 
-      <td><a href="deleta_matricula.php?id_matricula=<?php echo $linha['id_alunos_cursos']; ?>">🗑️</a></td>
-      </tr>;
+         <td><a href="deleta_matricula.php?id_matricula=<?php echo $linha['id_alunos_cursos'];?>">🗑️</a></td></tr>
 
-   <?php
-   };
-   ?>
+      <?php
+      };
+      ?>
+   </tbody>
 
 </table>
