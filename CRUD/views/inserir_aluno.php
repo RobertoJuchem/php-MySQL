@@ -9,5 +9,5 @@
    <br>
    <input type="text" name="data_nascimento" placeholder="Insira a data de nascimento">
    <br><br>
-   <input type="submit" value="Adicionar aluno">
+   <input type="submit" value="Adicionar aluno" class="linkInserirDados">
 </form>

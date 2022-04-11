@@ -15,7 +15,7 @@ header{
    padding: 30px 0;
 }
 
-input{
+input, select{
    font-size: 16px;
    padding: 5px;
 }

@@ -1,3 +1,5 @@
+<a href="?pagina=inserir_matricula" class="linkInserirDados">Matricular aluno em um curso</a>
+
 <table class="viewsTable">
    <tr>
       <th>Nome do Aluno</th>

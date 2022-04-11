@@ -9,5 +9,5 @@
    <br>
    <input type="text" name="carga_horaria" placeholder="Insira a carga horária">
    <br><br>
-   <input type="submit" value="Adicionar curso">
+   <input type="submit" value="Adicionar curso" class="linkInserirDados">
 </form>
