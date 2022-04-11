@@ -5,7 +5,8 @@
    <tr>
       <th>Nome do Aluno</th>
       <th>Data de Nascimento</th>
-      <th>Delete</th>
+      <th>Editar</th>
+      <th>Deletar</th>
    </tr>
 
    <?php
@@ -16,6 +17,7 @@
                   <td>' . $linha['data_nascimento'] . '</td>';
    ?>
 
+      <td><a href="?pagina=inserir_aluno&editar=<?php echo $linha['id_aluno']; ?>">🖉</a></td>
       <td><a href="deleta_aluno.php?id_aluno=<?php echo $linha['id_aluno']; ?>">🗑️</a></td>
       </tr>
 
