@@ -6,6 +6,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="//cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
    <link rel="stylesheet" href="./css/style.css">
+   <script src="https://kit.fontawesome.com/ba0adca63c.js" crossorigin="anonymous"></script>
    <title>php + MySQL</title>
 </head>
 
@@ -14,7 +15,7 @@
       <div class="container">
          
          <div id="menu">
-            <a href="?pagina=home">php + MySQL</a>
+            <a href="?pagina=home">Home</a>
             <a href="?pagina=cursos">Cursos</a>
             <a href="?pagina=alunos">Alunos</a>
             <a href="?pagina=matriculas">Matrículas</a>

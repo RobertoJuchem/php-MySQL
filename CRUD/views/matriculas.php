@@ -19,7 +19,14 @@
                <td>' . $linha['nome_curso'] . '</td>'
       ?>
 
-         <td><a href="deleta_matricula.php?id_matricula=<?php echo $linha['id_alunos_cursos'];?>">🗑️</a></td></tr>
+         <td>
+            <a href="deleta_matricula.php?id_matricula=<?php echo $linha['id_alunos_cursos'];?>">
+               <span style="color: #262626;">   
+                  <i class="fa-solid fa-trash-can"></i>
+               </span>   
+            </a>
+         </td>
+      </tr>
 
       <?php
       };
