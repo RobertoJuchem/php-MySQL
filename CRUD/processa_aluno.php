@@ -11,5 +11,3 @@ $query = "INSERT INTO alunos (nome, data_nascimento)
 mysqli_query($conexao, $query);
 
 header('location:index.php?pagina=alunos');
-
-?>

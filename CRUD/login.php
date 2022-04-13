@@ -18,5 +18,3 @@ if(mysqli_num_rows($consulta) == 1){
 }else{
    header('location:index.php?erro=1');
 }
-
-?>

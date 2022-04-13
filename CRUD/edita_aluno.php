@@ -14,5 +14,3 @@ $query = "UPDATE alunos set nome = '$nome_curso', data_nascimento = '$data_nasci
 mysqli_query($conexao, $query);
 
 header('location:index.php?pagina=alunos');
-
-?>

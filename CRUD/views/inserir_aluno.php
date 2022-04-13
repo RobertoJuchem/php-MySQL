@@ -27,19 +27,11 @@
             <input type="hidden" name="id_aluno" value="<?php echo $linha['id_aluno']; ?>">
             <label><strong>Nome Aluno:</strong></label>
             <br>
-            <input
-               type="text"
-               name="nome_aluno"
-               placeholder="Insira o nome do aluno"
-               value="<?php echo $linha['nome']; ?>">
+            <input type="text" name="nome_aluno" placeholder="Insira o nome do aluno" value="<?php echo $linha['nome']; ?>">
             <br><br>
             <label><strong>Data Nascimento:</strong></label>
             <br>
-            <input
-               type="text"
-               name="data_nascimento"
-               placeholder="Insira a data de nascimento"
-               value="<?php echo $linha['data_nascimento']; ?>">
+            <input type="text" name="data_nascimento" placeholder="Insira a data de nascimento" value="<?php echo $linha['data_nascimento']; ?>">
             <br><br>
             <input type="submit" value="Editar aluno" class="linkInserirDados">
          </form>

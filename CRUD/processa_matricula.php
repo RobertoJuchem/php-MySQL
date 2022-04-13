@@ -11,5 +11,3 @@ $query = "INSERT INTO  alunos_cursos(id_aluno, id_curso)
 mysqli_query($conexao, $query);
 
 header('location:index.php?pagina=matriculas');
-
-?>

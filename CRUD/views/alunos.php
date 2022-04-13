@@ -22,15 +22,15 @@
 
          <td>
             <a href="?pagina=inserir_aluno&editar=<?php echo $linha['id_aluno']; ?>">
-            <span style="color: #262626;">
-               <i class="fa-solid fa-user-pen"></i>
-            </span>   
+               <span style="color: #262626;">
+                  <i class="fa-solid fa-user-pen"></i>
+               </span>
             </a>
          </td>
 
          <td>
             <a href="deleta_aluno.php?id_aluno=<?php echo $linha['id_aluno']; ?>">
-               <span style="color: #262626;">   
+               <span style="color: #262626;">
                   <i class="fa-solid fa-trash-can"></i>
                </span>
             </a>

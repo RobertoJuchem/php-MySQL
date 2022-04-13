@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,18 +14,18 @@
 <body>
    <header>
       <div class="container">
-         
+
          <div id="menu">
             <a href="?pagina=home">Home</a>
 
-            <?php if(isset($_SESSION['login'])){ ?>
+            <?php if (isset($_SESSION['login'])) { ?>
                <a href="?pagina=cursos">Cursos</a>
                <a href="?pagina=alunos">Alunos</a>
                <a href="?pagina=matriculas">Matrículas</a>
                <a href="logout.php">
-                  <?php echo $_SESSION['usuario'];?>(Sair)
+                  <?php echo $_SESSION['usuario']; ?>(Sair)
                </a>
-            <?php }?>
+            <?php } ?>
          </div>
       </div>
    </header>

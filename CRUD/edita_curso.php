@@ -14,5 +14,3 @@ $query = "UPDATE cursos set nome_curso = '$nome_curso', carga_horaria = $carga_h
 mysqli_query($conexao, $query);
 
 header('location:index.php?pagina=cursos');
-
-?>

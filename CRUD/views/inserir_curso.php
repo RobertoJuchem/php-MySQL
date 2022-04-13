@@ -26,19 +26,11 @@
             <input type="hidden" name="id_curso" value="<?php echo $linha['id_curso']; ?>">
             <label><strong>Nome Curso:</strong></label>
             <br>
-            <input
-               type="text"
-               name="nome_curso"
-               placeholder="Insira o nome do curso"
-               value="<?php echo $linha['nome_curso']; ?>">
+            <input type="text" name="nome_curso" placeholder="Insira o nome do curso" value="<?php echo $linha['nome_curso']; ?>">
             <br><br>
             <label><strong>Carga Horária:</strong></label>
             <br>
-            <input
-               type="text"
-               name="carga_horaria"
-               placeholder="Insira a carga horária"
-               value="<?php echo $linha['carga_horaria']; ?>">
+            <input type="text" name="carga_horaria" placeholder="Insira a carga horária" value="<?php echo $linha['carga_horaria']; ?>">
             <br><br>
             <input type="submit" value="Editar curso" class="linkInserirDados">
          </form>

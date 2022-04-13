@@ -9,5 +9,3 @@ $query = "DELETE from alunos where id_aluno = $id_aluno";
 mysqli_query($conexao, $query);
 
 header('location:index.php?pagina=alunos');
-
-?>
