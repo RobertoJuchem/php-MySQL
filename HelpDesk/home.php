@@ -1,3 +1,13 @@
+<?php
+
+session_start();
+
+if(!isset($_SESSION['valida_login'])){
+  header('location:index.php?loginInvalido=erro');
+}
+
+?>
+
 <html>
   <head>
     <meta charset="utf-8" />
