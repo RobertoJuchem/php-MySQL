@@ -29,8 +29,13 @@ if(!isset($_SESSION['valida_login'])){
     <nav class="navbar navbar-dark bg-dark">
       <a class="navbar-brand" href="#">
         <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-        App Help Desk
+        Help Desk
       </a>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="logoff.php">Sair</a>
+        </li>
+      </ul>
     </nav>
 
     <div class="container">    
@@ -45,10 +50,10 @@ if(!isset($_SESSION['valida_login'])){
               <div class="row">
                 <div class="col">
                   
-                  <form>
+                  <form method="post" action="inserir_chamado.php">
                     <div class="form-group">
                       <label>Título</label>
-                      <input type="text" class="form-control" placeholder="Título">
+                      <input type="text" class="form-control" name="titulo" placeholder="Título">
                     </div>
                     
                     <div class="form-group">
